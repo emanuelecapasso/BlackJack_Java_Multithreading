@@ -58,17 +58,10 @@ Client-BlackJack/
 
 - Ogni giocatore inizia con **100 fiches**
 - Il banco pesca fino a raggiungere almeno **17**
-- **Blackjack** (Asso + figura con le prime 2 carte) paga **2.5x**
+- **Blackjack** (Asso + figura o carta con valore 10 con le prime 2 carte) paga **2.5x**
 - Vittoria normale paga **2x**
 - In caso di pareggio la puntata viene restituita
 - Se le fiches si esauriscono il giocatore viene disconnesso
-
----
-
-## Requisiti
-
-- **Java 11** o superiore
-- Nessuna libreria esterna
 
 ---
 
