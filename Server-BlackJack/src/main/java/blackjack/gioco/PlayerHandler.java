@@ -172,10 +172,21 @@ public class PlayerHandler implements Runnable {
         send("Fiches rimanenti: " + fiches);
 
         if (val == 21 && hand.size() == 2) {
-            boolean hasAce = hand.stream().anyMatch(c -> c.getValue() == 11);
-            boolean hasTen = hand.stream().anyMatch(c -> c.getValue() == 10);
-            naturalBlackjack = hasAce && hasTen;
+            boolean hasAce = false;
+            boolean hasTen = false;
 
+            for (Deck.Card c : hand) {
+                if (c.getValue() == 11) {
+                    hasAce = true;
+                } else if (c.getValue() == 10) {
+                    hasTen = true;
+                }
+
+                if (hasAce && hasTen) {
+                    break;
+                }
+            }
+            
             if (naturalBlackjack) {
                 send("HAI FATTO BLACKJACK!");
             }
