@@ -8,7 +8,7 @@ import java.net.Socket;
 /*
  * Client Blackjack
  * Si connette al server tramite socket TCP e gestisce due canali separati: 
- * - Un thread in background (daemon) che riceve i messaggi dal server. 
+ * - Un thread Reader che riceve i messaggi dal server. 
  * -Il thread principale che legge i comandi da tastiera e li invia.
  * Quando il server chiude la connessione, il thread di lettura stampa un messaggio e termina l'applicazione con System.exit(0).
  */ 
