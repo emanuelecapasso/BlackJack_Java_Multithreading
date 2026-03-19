@@ -230,10 +230,6 @@ public class PlayerHandler implements Runnable {
         return sb.append("]").toString();
     }
 
-    // Mantenuto per compatibilità con ServerMain.dealerHandToString()
-    public static String cardLabel(int v) {
-        return (v == 11) ? "A" : String.valueOf(v);
-    }
 
     public void resolveRound(int dealerValue, String dealerHandStr, boolean dealerNatural) {
         send("─────────────────────────────");
