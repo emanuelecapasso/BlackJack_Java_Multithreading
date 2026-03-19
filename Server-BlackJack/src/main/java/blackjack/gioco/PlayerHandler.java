@@ -186,7 +186,7 @@ public class PlayerHandler implements Runnable {
                     break;
                 }
             }
-            
+            naturalBlackjack = hasAce && hasTen;
             if (naturalBlackjack) {
                 send("HAI FATTO BLACKJACK!");
             }
