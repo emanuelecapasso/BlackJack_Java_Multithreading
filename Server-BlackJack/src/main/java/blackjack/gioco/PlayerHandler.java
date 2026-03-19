@@ -198,7 +198,6 @@ public class PlayerHandler implements Runnable {
         send("Digita HIT per pescare o STAY per fermarti.");
     }
 
-    // FIX: parametro List<Deck.Card> invece di List<Integer>
     public static int calcHandValue(List<Deck.Card> h) {
         int total = 0;
         int aces  = 0;
